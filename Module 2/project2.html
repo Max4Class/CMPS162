@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CMPS 162: Module 2 Programming Project</title>
+<style>* { font-family: monospace; }</style>
+<script>
+
+// NOTE: You can enter both code and explanations. For an explanation, start
+//       the line with '//' which indicates a comment.
+
+// NOTE: console.log prints text to the browser console that you can enable
+//       to see the output. It is a little bit more convenient than alert so
+//       we will use it most of the time.
+
+
+
+//-----------//
+// Prompts //
+//-----------//
+prompt(variablename);
+
+// 1. Create a string variable called 'name' and store your name in it.
+
+var name = "Max McAuley";
+
+// 2. Write code to alert your name in the browser.
+
+alert(name);
+
+// 3. Create two number variables name 'first' and 'second'. Assign 13 to
+//    first and 26 to second. Alert the sum of the two variables in the browser.
+
+var first = 13;
+var second = 26;
+alert(first + second);
+
+//--------//
+// Values //
+//--------//
+console.log("Values");
+
+
+//1. Create a variable that stores a question
+
+    var question = "What's your favorite food?";
+
+//2. Create a prompt that uses that variable from #1 to display the data
+
+    var favFood = prompt(question);
+
+//3. Write the output on the user screen via the HTML
+
+    alert(favFood);
+
+//4. Create a variable that stores the answer to display it via an alert on the screen
+
+    alert("Your favorite food is " + favFood + "!");
+
+//-------------//
+// CONCAT STRINGS //
+//-------------//
+console.log("Concat Strings");
+
+// 1. Create a variable that provides a first name
+
+    var firstName = "Max";
+
+// 2. Create a variable that provides a last name
+
+    var lastName = "McAuley";
+
+// 3. Create a variable that consolidates both the first and last name together and write 
+//    it on the screen.
+
+    var fullName = firstName + " " + lastName;
+    alert(fullName);
+
+//---------------------- //
+// COMPARISON OPERATORS //
+//----------------------//
+console.log("Comparison Operators");
+// 1. Create variable to equal a numeric value
+
+    var numValue = 6;
+
+// 2. Create a conditional statement if the value is either < or > 
+
+    if (numValue > 5){
+        alert("That's a big number.");
+    }
+
+// 3. Add 2 Else statements to your condition and a default answer
+
+    if (numValue === 5){
+        alert("That's a big number.");
+    } else if (numValue === 6) {
+        alert("That's an even bigger number.");
+    } else {
+        alert("That's a boring number.");
+    }
+
+</script>
+</head>
+<body>
+  See console!
+</body>
+</html>
