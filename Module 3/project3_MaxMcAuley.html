@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CMPS 162: Module 3 Programming Project</title>
+<style>* { font-family: monospace; }</style>
+<script>
+
+//--------//
+// Strings //
+//--------//
+console.log("Strings");
+
+/*
+  1. Create a variable name and assign it a value, and ensure it's in lowercase
+*/
+  var team = "Tampa Bay Bucs";  //First one is on me.
+
+/*
+  2. Convert your string to the Lower Case using the function that does this
+*/
+  var createToLowerCase = team.toLowerCase();
+  console.log(createToLowerCase);
+
+/*
+  3. Use the same variable in #1 and now use it as an upper case
+*/
+  team = team.toUpperCase();
+
+/*
+  4. Convert the string to the Upper Case using the function that does this.
+  Example; //show how to move to the upper case method.
+*/
+  var createToUpperCase = team.toUpperCase();
+  console.log(createToUpperCase);
+
+/*
+  5. Replace the following String with " Tom Brady is the real GOAT";
+*/
+  var name = "Lebron James is the goat";
+  name = name.replace("Lebron James", "Tom Brady");
+  name = name.replace("goat", "real GOAT");
+
+/*
+  6. Show how you would search the string below to find University
+*/
+  var str = "Point Park University Rocks";
+  var firstChar = text.indexOf("University");
+  if (firstChar !== -1) {
+    alert("The string contains the word 'Univerity.'");
+  } else {
+    alert("'Univerity' not found.");
+  }
+
+//--------------//
+// Numbers//
+//--------------//
+
+console.log("Numbers");
+
+// 1. Convert a number to a string
+
+var theNumber = 34; 
+var theNumberAsString = theNumber.toString();
+
+// 2. Check if the following is numeric
+
+var steelersSuperBowlAppearances = 8;
+var steelersBigBenSalary = 35000009.45;
+var steelers //code it to see if that variable is an integer with a boolean expression of true
+var steelersRock = "675";
+
+//--------------//
+// Dates         //
+//--------------//
+//Example
+var day = new Date();
+var output = day.getDate();
+console.log(output);
+
+// 1. Get the Date. Create the variables and use the console to output your data
+// Follow above, that one is on me
+
+var d = new Date();
+
+// 2. Get the Full Year
+
+var thisYear = d.getFullYear();
+alert(thisYear);
+
+// 3. Get the Time
+
+var thisTime = d.getTime();
+alert(thisTime);
+
+// 4. Get the Month
+
+var thisMonth = d.getMonth();
+alert(thisMonth);
+
+// 5. Get the Seconds
+
+var thisSecond = d.getSeconds();
+alert(thisSecond);
+
+// 6. Get the Hours, Minutes and Seconds together
+
+var d = new Date();
+var thisHour = d.getHours();
+var thisMinute = d.getMinutes();
+var thisSecond = d.getSeconds();
+alert("The time is: " + thisHour + " hours, " + thisMinute + " minutes, " + thisSecond + " seconds.")
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+  See console!<br><br>
+  
+  <div id="div1"
+       style="background-color:yellow;"
+       onclick="swapColors();">
+    Hello
+  </div>
+  <div id="div2"
+       style="background-color:green;"
+       onclick="swapColors();">
+    World
+  </div>
+</body>
+</html>
